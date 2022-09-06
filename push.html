@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="./assets/images/meta.png">
+	<title>Nisha</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	<script src="./assets/js/editor.js"></script>
+	<script>
+		$(document).ready(function() {
+			$("#txtEditor").Editor();
+		});
+	</script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link href="./assets/css/editor.css" type="text/css" rel="stylesheet"/>
+	<!-- Bootstrap  -->
+	<link href="./assets/css/bootstrap.min.css" rel="stylesheet">
+	<!-- Theme style  -->
+	<link href="./assets/css/content.css" rel="stylesheet">
+</head>
+<body>
+	<div class="main">
+		<div class="text-center">
+			<img class="mb-4" src="./assets/images/meta.png" alt="" width="90" height="70">
+		</div>
+		<div class="container d-flex flex-column justify-content-center p-5">
+			<div class="d-flex flex-row justify-content-between">
+				<p class="border border-secondary rounded p-2">Selected version V.1</p>
+				<p class="text-end">Nisha | <a href="./index.html">Logout</a></p>
+			</div>
+			<div class="d-flex flex-row justify-content-between">
+				<p>Summary:</p>		
+				<p class="w-40 border border-secondary rounded p-2">&nbsp;&nbsp;&nbsp;Diff&nbsp;&nbsp;&nbsp;</p>		
+			</div>
+			<div class="input-group">
+				<input type="text" class="form-control" style="font-size: initial;" placeholder="Please write summary ......" aria-label="Summary" aria-describedby="Summary">
+			</div>
+			<div class="mt-3">
+				<p>Description</p>
+				<textarea id="txtEditor"></textarea> 
+			</div>
+			<div class="d-flex flex-row mt-5">
+				<div style="flex: 5;" class="d-flex">
+					<button class="btn btn-lg btn-primary w-100" style="background-color:rgb(124, 218, 124); border-color:blue; color:white"><span class="h3"><a href="https://github.com/bharadwajnisha/bharadwajnisha/">Submit</a></span></button>
+					<!--a href="https://github.com/bharadwajnisha/bharadwajnisha/">V.1</a-->
+				</div>
+				<div style="flex: 1;"></div>
+				<div style="flex: 5;" class="d-flex">
+					<a class="btn btn-lg btn-outline-primary w-100" href="./content.html"><span class="h3">Cancel</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
